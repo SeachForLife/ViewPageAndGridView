@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">滑动效果</string>
+    <string name="action_settings">设置</string>
+    <string name="title_lenglian">运输监控系统</string>
+    <string name="title_activity_mater_manager">物流管理</string>
+    <string name="title_activity_monitored">运输监控</string>
+
+</resources>

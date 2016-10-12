@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@color/share_text"
+        android:padding="1px"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/status_text"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="功能"
+            android:id="@+id/traciing_titile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="1px"
+        android:background="@drawable/bg_layout_shape"
+         >
+        <LinearLayout style="@style/top_layout" android:id="@+id/traciing_loading" android:onClick="onClick_traciing">
+            <TextView style="@style/usertext" android:text="装    车" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout style="@style/single_layout" android:id="@+id/traciing_unloading" android:onClick="onClick_traciing">
+            <TextView style="@style/usertext" android:text="卸    车" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/traciing_alltem_layout"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="1px"
+        android:background="@drawable/bg_layout_shape"
+        >
+        <LinearLayout style="@style/single_layout" android:id="@+id/traciing_alltem" android:onClick="onClick_traciing">
+            <TextView style="@style/usertext" android:text="运单全程温度"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/traciing_up_layout"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="1px"
+        android:background="@drawable/bg_layout_shape"
+        >
+        <LinearLayout style="@style/single_layout" android:id="@+id/traciing_orderup" android:onClick="onClick_traciing">
+            <TextView style="@style/usertext" android:text="运单提交"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="1px"
+        android:background="@drawable/bg_layout_shape"
+        >
+        <LinearLayout style="@style/single_layout" android:id="@+id/traciing_printnew" android:onClick="onClick_traciing">
+            <TextView style="@style/usertext" android:text="新添运单打印"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

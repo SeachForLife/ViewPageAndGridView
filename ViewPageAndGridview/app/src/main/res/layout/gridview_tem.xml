@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:id="@+id/gridview_titile"
+        android:background="@color/share_text"
+        android:padding="1px"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/status_text"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="温度信息"
+            android:id="@+id/gridview_titile_name" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dibu"
+        android:layout_below="@+id/gridview_titile"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_above="@+id/lc_rela"
+            >
+
+            <LinearLayout
+                android:id="@+id/lv_title"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#EBEBEB"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/title_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:text="冷藏箱温度"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/lv_title"
+                android:background="@color/white"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/linearLayout">
+
+                <GridView
+                    android:id="@+id/main_gridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp"
+                    >
+                </GridView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_rela"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#EBEBEB"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/lc_titile"
+                >
+
+                <TextView
+                    android:id="@+id/title_id2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:text="位置"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/title_value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:text="温度"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/title_carnum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:text="剩余时限"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:layout_below="@+id/lc_titile"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/lc_values"
+                >
+
+                <ListView
+                    android:id="@+id/lc_tempture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="#00000000"
+                    android:paddingRight="3.0dip" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/status_view"
+        android:padding="1px"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/sbc_page_number_text"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="物料出库"
+            android:id="@+id/mater_titile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="1px"
+        android:background="@drawable/bg_layout_shape"
+        >
+        <LinearLayout style="@style/top_layout">
+            <TextView style="@style/useredit" android:text="物料选择" />
+            <Spinner style="@style/useredit"  android:id="@+id/mater_choose" />
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout style="@style/mid_layout">
+            <TextView style="@style/useredit" android:text="编号扫描" />
+            <EditText style="@style/useredit"  android:id="@+id/mater_devicenum" />
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout style="@style/single_layout"  android:id="@+id/mater_layout_storenum">
+            <TextView style="@style/useredit" android:text="库房号" />
+            <EditText style="@style/useredit"  android:id="@+id/mater_storenum" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="1px"
+        android:background="@drawable/bg_layout_shape"
+        >
+        <LinearLayout style="@style/single_layout" >
+            <Button style="@style/usertext" android:text="确定" android:id="@+id/mater_sure" android:onClick="Click_mater"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

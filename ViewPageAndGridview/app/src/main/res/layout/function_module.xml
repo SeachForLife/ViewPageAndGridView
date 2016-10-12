@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+    android:baselineAligned="false">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/lenglian_title" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="1px"
+        android:background="@drawable/bg_layout_shape"
+         >
+        <LinearLayout style="@style/top_layout" android:id="@+id/matter_enter" android:onClick="onClick">
+            <TextView style="@style/usertext" android:text="物料入库" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <View style="@style/bg_line"/>
+        <LinearLayout style="@style/single_layout" android:id="@+id/matter_out" android:onClick="onClick">
+            <TextView style="@style/usertext" android:text="物料出库" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="1px"
+        android:background="@drawable/bg_layout_shape"
+        >
+        <LinearLayout style="@style/top_layout" android:id="@+id/function_pickup" android:onClick="onClick">
+            <TextView style="@style/usertext" android:text="取       货"  />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout style="@style/mid_layout" android:id="@+id/function_traciing" android:onClick="onClick">
+            <TextView style="@style/usertext" android:text="中转运输" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout style="@style/single_layout" android:id="@+id/function_send" android:onClick="onClick">
+            <TextView style="@style/usertext" android:text="送       货" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/lenglian_title" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="1px"
+        android:background="@drawable/bg_layout_shape"
+         >
+        <LinearLayout style="@style/top_layout">
+            <TextView style="@style/usertext" android:text="公司名称" />
+            <TextView style="@style/usertext" android:text="xxxxxxxxxxxxxx" />
+        </LinearLayout>
+
+        <View style="@style/bg_line"/>
+        <LinearLayout style="@style/mid_layout">
+            <TextView style="@style/usertext" android:text="设备编号" />
+            <TextView style="@style/usertext" android:text="设备编号" android:id="@+id/message_simi" />
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout style="@style/bottom_layout">
+            <TextView style="@style/usertext" android:text="联系电话" />
+            <TextView style="@style/usertext" android:text="400-0000001" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="1px"
+        android:background="@drawable/bg_layout_shape"
+        >
+        <LinearLayout style="@style/single_layout" android:id="@+id/version_layout">
+            <TextView style="@style/usertext" android:text="版本检查"/>
+            <TextView style="@style/usertext" android:text="版本号" android:id="@+id/version"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
